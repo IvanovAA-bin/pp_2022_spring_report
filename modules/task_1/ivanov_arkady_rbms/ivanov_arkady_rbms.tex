@@ -18,7 +18,7 @@
 \usepackage{wrapfig}
 \usepackage{float}
 
-\graphicspath{ {./images/} }
+\graphicspath{ {../modules/task_1/ivanov_arkady_rbms/images/} }
 
 \geometry{a4paper,top=2cm,bottom=2cm,left=2.5cm,right=1.5cm}
 \setlength{\parskip}{0.5cm}
@@ -227,42 +227,42 @@ void radixBatchersMergesort_std(std::vector<T>* data, int degree)
 \par Был проведен эксперимент, в котором производилось измерение ускорения вычислений относительно одного потока для различных реализаций с различным количеством элементов в исходном массиве. Ось абсцисс показывает степень, в которую возводится число 10, результат будет количеством элементов в массиве. Ось ординат показывает ускорение вычислений относительно одного потока
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/boost_comparsion_8thrd.png}
+    \includegraphics[width=0.85\textwidth]{boost_comparsion_8thrd.png}
     \caption{Сравнение ускорения реализаций сортировок}
     \label{fig:my_label_1}
 \end{figure}
 \par Был проведен эксперимент, в котором производилось измерение времени выполнения вычислений относительно одного потока для различных реализаций с различным количеством элементов в исходном массиве.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/sort_time_8thrd.png}
+    \includegraphics[width=0.85\textwidth]{sort_time_8thrd.png}
     \caption{Сравнение времени выполнения вычислений}
     \label{fig:my_label_2}
 \end{figure}
 \par Был проведен эксперимент, в котором производилось измерение ускорения для реализации OpenMP на разном количестве исходных данных и на различных количествах потоков.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/boost_omp.png}
+    \includegraphics[width=0.85\textwidth]{boost_omp.png}
     \caption{Сравнение ускорения для OpenMP реализации}
     \label{fig:my_label_3}
 \end{figure}
 \par Был проведен эксперимент, в котором производилось измерение ускорения для реализации TBB на разном количестве исходных данных и на различных количествах потоков.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/boost_tbb.png}
+    \includegraphics[width=0.85\textwidth]{boost_tbb.png}
     \caption{Сравнение ускорения для TBB реализации}
     \label{fig:my_label_4}
 \end{figure}
 \par Был проведен эксперимент, в котором производилось измерение ускорения для реализации std::thread на разном количестве исходных данных и на различных количествах потоков без использования механизма привязки потоков к ядрам
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/boost_std_without_affinity.png}
+    \includegraphics[width=0.85\textwidth]{boost_std_without_affinity.png}
     \caption{Сравнение ускорения для std::thread реализации без привязки по ядрам}
     \label{fig:my_label_5}
 \end{figure}
 \par Был проведен эксперимент, в котором производилось измерение ускорения для реализации std::thread на разном количестве исходных данных и на различных количествах потоков с использованием механизма привязки потоков к ядрам
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{images/boost_std_with_affinity.png}
+    \includegraphics[width=0.85\textwidth]{boost_std_with_affinity.png}
     \caption{Сравнение ускорения для std::thread реализации с привязкой по ядрам}
     \label{fig:my_label_6}
 \end{figure}
